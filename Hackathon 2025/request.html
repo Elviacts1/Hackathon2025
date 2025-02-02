@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreadsOfHope - Home</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="./assets/css/quicklinks.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <script src="https://kit.fontawesome.com/3d0038a991.js" crossorigin="anonymous"></script>
+    <style>
+          html, body {
+    background: #1a1a1a !important;
+    font-size: 16px; /* Slightly reduced base font size */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px; /* Reduced padding */
+    background-color: #1a1a1a;
+}
+
+.request-page {
+    padding: 30px; /* Reduced padding */
+    background-color: gold; /* Dark gray container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly reduced box shadow */
+    margin: 15px 0; /* Reduced margin */
+}
+
+.request-page h2 {
+    text-align: center;
+    color: black; /* Yellow heading for contrast */
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 1.8em; /* Slightly reduced font size */
+    font-weight: 600;
+}
+
+.request-page p {
+    font-size: 1.1em; /* Slightly reduced font size */
+    line-height: 1.7; /* Reduced line height */
+    color: #ffffff; /* White text */
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.request-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduced gap */
+    max-width: 500px; /* Reduced form width */
+    margin: 0 auto; /* Center the form */
+}
+
+.request-form label {
+    font-weight: 600;
+    margin-bottom: 5px; /* Reduced margin */
+    color: black; /* White labels */
+}
+
+.request-form input,
+.request-form textarea {
+    padding: 8px; /* Reduced padding */
+    font-size: 1em; /* Slightly reduced font size */
+    border: 1px solid #555; /* Darker border */
+    border-radius: 5px; /* Reduced border radius */
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    background-color: white; /* Dark input fields */
+    color: #ffffff; /* White text */
+}
+
+.request-form input::placeholder,
+.request-form textarea::placeholder {
+    color: #999; /* Light gray placeholder text */
+}
+
+.request-form input[type=submit] {
+    padding: 12px; /* Reduced padding inside the button */
+    font-size: 1.1em; /* Slightly reduced font size */
+    color: #ffffff; /* White text color */
+    background-color: #2c3e50; /* Dark blue-grey background */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Reduced border radius */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+    width: 100%; /* Make the button span the full width of its container */
+    max-width: 200px; /* Reduced max width */
+    margin: 0 auto; /* Center the button horizontally */
+    text-align: center; /* Ensure text is centered in the button */
+    display: block; /* Ensure the button is treated as a block element */
+}
+
+.request-form input[type=button]:hover {
+    background-color: #34495e; /* Slightly lighter color for hover effect */
+}
+
+.request-form button:hover {
+    background-color: #34495e; /* Darker yellow on hover */
+}
+
+.address-section {
+    background-color: #ffffff; /* Dark gray background */
+    padding: 15px; /* Reduced padding */
+    border-radius: 10px;
+    margin-top: 15px; /* Reduced margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly reduced box shadow */
+    text-align: center; /* Center text in address section */
+}
+
+.address-section h3 {
+    margin-top: 0;
+    color: #FFCC00; /* Yellow heading */
+    font-size: 1.8em; /* Slightly reduced font size */
+}
+
+.address-section p {
+    margin: 8px 0; /* Reduced margin */
+    color: #ffffff; /* White text */
+}
+
+
+@media (max-width: 768px) {
+    .request-page {
+        padding: 20px; /* Reduced padding */
+    }
+
+    .request-page p {
+        font-size: 1em; /* Reduced font size */
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1a1a1a; /* Dark gray footer */
+    color: #ffffff; /* White text */
+    padding: 15px 0; /* Reduced padding */
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px; /* Reduced padding */
+}
+
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-social {
+    flex: 1;
+    margin: 8px; /* Reduced margin */
+    min-width: 200px; /* Maintained min-width */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+.footer-links ul li a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a {
+    color: #ffffff; /* White text */
+    margin-right: 8px; /* Reduced margin */
+    font-size: 1.4em; /* Slightly reduced font size */
+}
+
+.footer-social a:hover {
+    color: #FFCC00; /* Yellow on hover */
+}
+
+.footer-bottom {
+    margin-top: 15px; /* Reduced margin */
+    font-size: 0.9em; /* Slightly reduced font size */
+}
+
+    </style>
+</head>
+<body style="background-color: #000000;">
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo">
+            <h1><a href="index.html" style="color: yellow;text-decoration: none;">ThreadsOfHope</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="carbon_footprint.html">Carbon Footprint</a></li>
+                <li><a href="recycle.html">Recycle</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="request.html">Request</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+<br>
+    <!-- Request Section -->
+    <style>
+        /* Confirmation Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal button {
+            padding: 8px 15px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn-confirm {
+            background-color: gold;
+            color: black;
+        }
+
+        .btn-cancel {
+            background-color: black;
+            color: gold;
+        }
+
+        .modal button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <section class="request-page">
+        <h2>Request Form</h2>
+
+        <form class="request-form" id="request-form">
+            <label for="name">Full Name</label>
+            <input style="color: black;" type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input style="color: black;"type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="phone">Phone Number</label>
+            <input style="color: black;"type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+            <label for="address">Delivery Address</label>
+            <textarea style="color: black;"id="address" name="address" rows="4" required placeholder="Enter delivery address"></textarea>
+
+            <label for="request-type">Type of Request</label>
+            <input style="color: black;"type="text" id="request-type" name="request-type" placeholder="e.g., plastic, fabrics, etc." required>
+
+            <br><br> 
+            <input type="submit" value="Request">
+        </form>
+    </section>
+</div>
+
+<!-- Confirmation Modal -->
+<div id="confirmationModal" class="modal">
+    <div class="modal-content">
+        <p>Are you sure you want to submit this request?</p>
+        <button class="btn-confirm" id="confirmSubmit">Yes, Submit</button>
+        <button class="btn-cancel" id="cancelSubmit">Cancel</button>
+    </div>
+</div>
+
+<!-- JavaScript for Modal and Auto-fill -->
+<script>
+    // Dummy data for auto-fill
+    const dummyData = {
+        name: "Jane Doe",
+        email: "janedoe@example.com",
+        phone: "9876543210",
+        address: "456 Elm St, Springfield, IL 62701",
+        requestType: "Clothes, Plastic Bottles, Paper"
+    };
+
+    // Function to auto-fill form when user interacts with any input field
+    function populateForm() {
+        document.getElementById('name').value = dummyData.name;
+        document.getElementById('email').value = dummyData.email;
+        document.getElementById('phone').value = dummyData.phone;
+        document.getElementById('address').value = dummyData.address;
+        document.getElementById('request-type').value = dummyData.requestType;
+    }
+
+    // Attach event listeners to all input fields
+    document.getElementById('name').addEventListener('focus', populateForm);
+    document.getElementById('email').addEventListener('focus', populateForm);
+    document.getElementById('phone').addEventListener('focus', populateForm);
+    document.getElementById('address').addEventListener('focus', populateForm);
+    document.getElementById('request-type').addEventListener('focus', populateForm);
+
+    // Modal Logic
+    const form = document.getElementById("request-form");
+    const modal = document.getElementById("confirmationModal");
+    const confirmBtn = document.getElementById("confirmSubmit");
+    const cancelBtn = document.getElementById("cancelSubmit");
+
+    // Show modal when the form is submitted
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
+        modal.style.display = "flex";
+    });
+
+    // When the user clicks "Yes, Submit"
+    confirmBtn.addEventListener("click", function() {
+        alert("Your request has been successfully submitted!");
+        modal.style.display = "none";
+        form.submit(); // Submit the form after confirmation
+    });
+
+    // When the user clicks "Cancel"
+    cancelBtn.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    // Close modal if clicked outside
+    window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+</script>
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About ThreadsOfHope</h3>
+                <p>We are a platform that facilitates donations of various items, including clothes, glass, plastic, paper, and more, from individuals and companies.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="request.html">Request</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="threadsofhope00@gmail.com">threadsofhope00@gmail.com</a></p>
+                <p>Phone: +91 7012402645</p>
+                <p>Address: Ernakulam</p>
+            </div>
+    
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/profile.php?id=61572663483380"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                <a href="https://x.com/Threadsofhopes"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                <a href="https://www.instagram.com/threads_of_hope00/"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="https://www.youtube.com/channel/UCsyMJrs3KuUyxv7YqDOkdmA"><i class="fa-brands fa-youtube fa-lg"></i></a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 Threads Of Hope. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

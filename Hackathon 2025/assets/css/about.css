@@ -1,0 +1,287 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #1a1a1a; /* Deep Dark Gray */
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3); /* Subtle yellow glow */
+}
+
+/* Logo & Website Name */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #FFD700; /* Gold Yellow */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* Navbar styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center the links horizontally */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+/* Links */
+nav ul li a {
+    text-decoration: none;
+    color: #FFD700; /* Gold Yellow */
+    font-size: 18px;  /* Increased size */
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect: Button Glow */
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #FFD700; /* Gold Underline Effect */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);  /* Expand underline */
+}
+
+nav ul li a:hover {
+    background-color: #FFD700; /* Full Bright Yellow */
+    color: #222; /* Dark Text */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7); /* Glow Effect */
+}
+/* Main Section Styling */
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+/* Who We Are Section */
+.who-we-are {
+    background-color: #e9f7fd;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.who-we-are h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9900;
+}
+
+.who-we-are p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: #555;
+}
+
+/* Why It Matters Section */
+.why-it-matters {
+    background-color: #e9f7fd;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.why-it-matters h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9900;
+}
+
+.why-it-matters p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: #555;
+}
+
+/* Meet the Team Section */
+.meet-the-team {
+    text-align: center;
+    padding: 20px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Add this line if you want the items to wrap to the next line if there's not enough space */
+}
+
+.team-member {
+    margin: 20px;
+    text-align: center;
+}
+
+/* .team-member img {
+    max-width: 180px;
+    border-radius: 75%;
+} */
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #555;
+}
+
+
+/* How It Works Section */
+.how-it-works {
+    background-color: #e9f7fd;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9900;
+}
+
+.how-it-works p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: #555;
+}
+
+.how-it-works ol {
+    font-size: 16px;
+    margin-top: 20px;
+    padding-left: 40px;
+}
+
+.how-it-works li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.how-it-works li strong {
+    color: #ff9900;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-member {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Values Section */
+.values ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.values li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #FFD700;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact .btn:hover {
+    background-color: #555;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 10px;
+    color: #FFD700;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Responsive Navigation (For Mobile) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

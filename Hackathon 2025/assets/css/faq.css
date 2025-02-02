@@ -1,0 +1,93 @@
+/* Global Styling */
+body {
+    background-color: black;
+    background-image: url('/assets/images/black.png'); /* Ensure the correct path */
+    background-size: cover; /* Ensures the image covers the entire background */
+}
+
+/* Main Container Styling */
+.main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* FAQ Section Styling */
+.faq-section {
+    background-color: #1c1c1c;  /* Dark background for the FAQ section */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+
+/* Heading Styling */
+.faq-section h1 {
+    color: #f1c40f;  /* Yellow color for the title */
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.faq-item h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f1c40f;  /* Yellow color for questions */
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ecf0f1;  /* Light gray color for answers */
+    padding-left: 40px;
+}
+
+/* Icon Styling */
+.faq-item h2 i {
+    color: #f1c40f;  /* Yellow color for icons */
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+/* Add padding to the faq-item */
+.faq-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #444444;  /* Dark border between questions */
+}
+
+/* Adjust spacing for last item to not have border */
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+/* Hover Effect for FAQ Items */
+.faq-item:hover h2 {
+    color: #d4ac0d;  /* Slightly darker yellow on hover for questions */
+}
+
+.faq-item:hover h3 {
+    color: #bdc3c7;  /* Slightly darker gray for answers on hover */
+}
+
+/* Responsive Design: Ensure readability on smaller screens */
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 20px;
+    }
+
+    .faq-item h2 {
+        font-size: 20px;
+    }
+
+    .faq-item h3 {
+        font-size: 16px;
+    }
+
+    .faq-section h1 {
+        font-size: 28px;
+    }
+}

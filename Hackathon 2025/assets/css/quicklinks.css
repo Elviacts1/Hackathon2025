@@ -1,0 +1,39 @@
+/* Quick Links Section */
+.quick-links {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.quick-links .container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.quick-links .link-item {
+    background-color: #FFD700; /* Gold Yellow */
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quick-links .link-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.quick-links .link-button {
+    text-decoration: none;
+    color: #222; /* Dark text for contrast */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quick-links .link-button:hover {
+    text-decoration:wavy;
+}

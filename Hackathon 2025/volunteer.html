@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreadsOfHope - Volunteers</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="./assets/css/quicklinks.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <script src="https://kit.fontawesome.com/3d0038a991.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/cursor.js"></script>
+    <link rel="stylesheet" href="./assets/css/cursor.css">
+</head>
+<style>
+    body {
+            background-color: black;
+            background-image: url(/assets/images/black.png);
+            background-size: cover;
+        }
+        section {
+            padding: 40px;
+            margin: 30px auto;
+            width: 85%;
+            border-radius: 12px;
+        }
+        /* Hero Section Styling */
+        #hero {
+            background: linear-gradient(to right, #ffcc00, #ff9900);
+            color: black;
+            padding: 80px 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px yellow;
+        }
+        #hero h1 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        #hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        #hero button {
+            background-color: black;
+            color: yellow;
+            padding: 15px 30px;
+            border: 3px solid yellow;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        #hero button:hover {
+            background-color: yellow;
+            color: black;
+        }
+        button {
+            background-color: gold;
+            color: black;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+        button:hover {
+            background-color: black;
+            color: yellow;
+        }
+        input, select, textarea {
+            width: 95%;
+            padding: 12px;
+            margin: 12px 0;
+            color: yellow;
+            background-color: black;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+        form {
+            text-align: left;
+            display: inline-block;
+            width: 45%;
+        }
+        /* Volunteer Form Styling */
+#volunteer-form {
+    background-color: rgba(255, 255, 0, 0.1);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px yellow;
+    width: 70%;
+    margin: auto;
+}
+
+#volunteer-form h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: yellow;
+}
+
+form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    font-size: 1.2em;
+    align-self: flex-start;
+    color: black;
+    margin-left: 5%;
+}
+
+input, select, textarea {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: black;
+    border-radius: 8px;
+    font-size: 1.2em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: gold;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+}
+input::placeholder {
+    color: white;
+    opacity: 1; /* Ensures visibility in some browsers */
+}
+textarea::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+    </style>
+</style>
+<body style="background-color: black; background-image: url('/assets/images/black.png'); background-size: cover;">
+    
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo">
+            <h1><a href="index.html" style="color: yellow;text-decoration: none;">ThreadsOfHope</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="carbon_footprint.html">Carbon Footprint</a></li>
+                <li><a href="recycle.html">Recycle</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="request.html">Request</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="hero" style="text-align: center; padding: 50px; background-color: #f4f4f4;">
+        <h1>Join Our Mission for a <strong style="color: white;">Responsible</strong> Future!</h1>
+        <p>Be a part of the change. Volunteer with us and make an impact.</p>
+        <button onclick="document.getElementById('volunteer-form').scrollIntoView();">Become a Volunteer</button>
+    </section>
+    
+    <!-- Why Volunteer Section -->
+    <section id="why-volunteer" style="padding: 5px; color: white; ">
+        <h2 style="font-size: 2.9em">Why Volunteer With <strong style="color: gold;">Us?</strong></h2>
+        <p style="font-size: large;">Help create a sustainable future while gaining experience, networking, and making a difference.</p>
+    </section>
+    
+    <!-- Volunteer Roles Section -->
+    <section id="volunteer-roles" style="padding: 4px; color: white;">
+        <h2 style="font-size: 2.9em">Volunteer Roles</h2>
+        <ul style="list-style: none; font-size: 1.7em;">
+            <li><strong style="color: gold;">Event Organizer:</strong> Help plan and manage sustainability events.</li>
+            <li><strong style="color: gold;">Awareness Ambassador:</strong> Spread awareness about sustainability.</li>
+            <li><strong style="color: gold;">Tech Support:</strong> Assist in website and database management.</li>
+            <li><strong style="color: gold;">Logistics Helper:</strong> Manage donation pickups and deliveries.</li>
+            <li><strong style="color: gold;">Community Engagement:</strong> Connect with people in need.</li>
+        </ul>
+    </section>
+    
+    <!-- Volunteer Registration Form -->
+    <section id="volunteer-form" style="padding: 30px; background-color: rgb(221, 190, 16);">
+        <h2>Volunteer Registration Form</h2>
+        <form id="volunteerform" action="index.html">
+            <label style="font-size: 1.5em;" for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+            
+            <label style="font-size: 1.5em;"for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+            
+            <label style="font-size: 1.5em;"for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your number"><br><br>
+            
+            <label style="font-size: 1.5em;"for="role">Preferred Role:</label><br>
+            <select id="role" name="role">
+                <option value="event_organizer">Event Organizer</option>
+                <option value="awareness_ambassador">Awareness Ambassador</option>
+                <option value="tech_support">Tech Support</option>
+                <option value="logistics_helper">Logistics Helper</option>
+                <option value="community_engagement">Community Engagement</option>
+            </select><br><br>
+            
+            <label style="font-size: 1.5em;"for="availability">Availability (Hours per week):</label><br>
+            <input type="number" id="availability" name="availability" min="1" required placeholder="Check availability"><br><br>
+            
+            <label style="font-size: 1.5em;"for="message">Why Do You Want to Volunteer?</label><br>
+            <textarea id="message" name="message" rows="4" required placeholder="Enter your opinion"></textarea><br><br>
+            
+            <input type="submit" onclick="mybutt()">
+        </form>
+        <!-- <div id="confirmationMessage" class="confirmation" style="display:none;">
+            Thank you for volunteering! Your response has been recorded.
+        </div> -->
+        <script>
+            // Dummy data for user
+            const dummyData = {
+                name: 'John Doe',
+                email: 'john.doe@example.com',
+                phone: '+1234567890',
+                role: 'tech_support',
+                availability: 10,
+                message: 'I want to help with technical support during the event.'
+            };
+    
+            // Automatically filling in the form fields
+            document.getElementById('name').value = dummyData.name;
+            document.getElementById('email').value = dummyData.email;
+            document.getElementById('phone').value = dummyData.phone;
+            document.getElementById('role').value = dummyData.role;
+            document.getElementById('availability').value = dummyData.availability;
+            document.getElementById('message').value = dummyData.message;
+            
+            function mybutt()
+            {
+                alert("Thank you for volunteering! Your response has been recorded. We are reviewing your response.");
+                
+            }
+    
+            // Focus on the "name" field when the page loads
+            // document.getElementById('name').focus();
+    
+            // Handle form submission
+            // document.getElementById('volunteerForm').addEventListener('submit', function(event) {
+            //     event.preventDefault(); // Prevent the form from submitting normally
+                
+            //     // Hide the form
+            //     this.style.display = 'none';
+    
+            //     // Show the confirmation message
+            //     document.getElementById('confirmationMessage').style.display = 'block';
+    
+            //     // Redirect to the home page after 3 seconds
+            //     setTimeout(function() {
+            //         window.location.href = 'index.html'; // Replace 'index.html' with your home page URL
+            //     }, 3000); // 3 seconds delay
+            // });
+        </script>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About ThreadsOfHope</h3>
+                <p>We are a platform that facilitates donations of various items, including clothes, glass, plastic, paper, and more, from individuals and companies.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="request.html">Request Clothes</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="threadsofhope00@gmail.com">threadsofhope00@gmail.com</a></p>
+                <p>Phone: +91 7012402645</p>
+                <p>Address: Ernakulam</p>
+            </div>
+    
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/profile.php?id=61572663483380"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                <a href="https://x.com/Threadsofhopes"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                <a href="https://www.instagram.com/threads_of_hope00/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href="https://www.youtube.com/channel/UCsyMJrs3KuUyxv7YqDOkdmA"><i class="fa-brands fa-youtube fa-xl"></i></a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 ThreadsOfHope. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

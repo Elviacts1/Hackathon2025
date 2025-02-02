@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    background-image: url('/assets/images/black.png'); /* Ensure the correct path */
+    background-size: cover; /* Ensures the image covers the entire background */
+}
+
+.main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #FFD700;} 
+
+h2 a {
+    text-decoration: none;
+    color: #FFD700;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    img {
+        width: 80%;
+        margin: 0 auto 20px auto;
+    }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register | Threads Of Hope</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000; /* Black background */
+            margin: 0;
+            padding: 0;
+            color: #ffffff; /* White text for better contrast */
+        }
+        .register-container {
+            max-width: 450px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #1a1a1a; /* Dark gray container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: #FFCC00; /* Yellow heading for contrast */
+        }
+        label {
+            font-size: 14px;
+            color: #ffffff; /* White labels */
+            margin-bottom: 5px;
+            display: block;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #555; /* Darker border */
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: #333; /* Dark input fields */
+            color: #ffffff; /* White text */
+            box-sizing: border-box; /* Ensure padding doesn't affect width */
+        }
+        input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder, textarea::placeholder {
+            color: #999; /* Light gray placeholder text */
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #FFCC00; /* Yellow button */
+            border: none;
+            border-radius: 5px;
+            color: #000000; /* Black text */
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #ffb700; /* Darker yellow on hover */
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .login-link a {
+            text-decoration: none;
+            color: #FFCC00; /* Yellow link */
+        }
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+        button[type="submit"]:hover {
+            background-color: #ffb700;
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .back-link a {
+            text-decoration: none;
+            color: #ffcc00;
+        }
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register to ThreadsOfHope</h2>
+        <form id="registerForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your contact number">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Create a password">
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+
+            <button type="submit">Register</button>
+        </form>
+
+        <div class="back-link">
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+            <p><a href="index.html">Back to Home</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Dummy registration data
+const dummyName = "John Doe";
+const dummyEmail = "user@example.com";
+const dummyPhone = "+1234567890";
+const dummyPassword = "password123";
+
+// Function to autofill registration form
+function autofillRegistrationForm() {
+    document.getElementById("name").value = dummyName;
+    document.getElementById("email").value = dummyEmail;
+    document.getElementById("phone").value = dummyPhone;
+    document.getElementById("password").value = dummyPassword;
+    document.getElementById("confirm-password").value = dummyPassword;
+}
+
+// Auto-fill when page loads
+document.addEventListener("DOMContentLoaded", autofillRegistrationForm);
+
+// Trigger autofill when user clicks on an input field
+document.getElementById("name").addEventListener("focus", autofillRegistrationForm);
+document.getElementById("email").addEventListener("focus", autofillRegistrationForm);
+document.getElementById("phone").addEventListener("focus", autofillRegistrationForm);
+document.getElementById("password").addEventListener("focus", autofillRegistrationForm);
+document.getElementById("confirm-password").addEventListener("focus", autofillRegistrationForm);
+
+// Handle form submission
+document.getElementById("registerForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get the input values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirm-password").value;
+
+    // Check if the entered credentials match the dummy data and passwords match
+    if (name === dummyName && email === dummyEmail && phone === dummyPhone && password === dummyPassword && password === confirmPassword) {
+        alert("Registration successful!");
+        // Redirect to the login page after successful registration
+        window.location.href = "login.html";
+    } else {
+        alert("Invalid information or passwords don't match. Please try again.");
+    }
+});
+
+    </script>
+</body>
+</html>
